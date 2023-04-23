@@ -3,11 +3,10 @@ import {
     Navbar,
     MobileNav,
     Typography,
-    Button,
     IconButton,
     Card,
-  } from "@material-tailwind/react";
-
+} from "@material-tailwind/react";
+import {Link} from 'react-router-dom'
 const NavBar = () => {
     const [openNav, setOpenNav] = React.useState(false);
 
@@ -26,8 +25,28 @@ const NavBar = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
+                <Link to="/" className="flex items-center">
+                    00 HOME
+                </Link>
+            </Typography>
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
+                <Link to="/destination" className="flex items-center">
+                    01 DESTINATION
+                </Link>
+            </Typography>
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="p-1 font-normal"
+            >
                 <a href="#" className="flex items-center">
-                    Pages
+                02 CREW
                 </a>
             </Typography>
             <Typography
@@ -37,27 +56,7 @@ const NavBar = () => {
                 className="p-1 font-normal"
             >
                 <a href="#" className="flex items-center">
-                    Account
-                </a>
-            </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-normal"
-            >
-                <a href="#" className="flex items-center">
-                    Blocks
-                </a>
-            </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-normal"
-            >
-                <a href="#" className="flex items-center">
-                    Docs
+                03 TECHNOLOGY
                 </a>
             </Typography>
         </ul>
@@ -75,13 +74,6 @@ const NavBar = () => {
                     </Typography>
                     <div className="flex items-center gap-4">
                         <div className="mr-4 hidden lg:block">{navList}</div>
-                        <Button
-                            variant="gradient"
-                            size="sm"
-                            className="hidden lg:inline-block"
-                        >
-                            <span>Buy Now</span>
-                        </Button>
                         <IconButton
                             variant="text"
                             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -123,9 +115,6 @@ const NavBar = () => {
                 </div>
                 <MobileNav open={openNav}>
                     {navList}
-                    <Button variant="gradient" size="sm" fullWidth className="mb-2">
-                        <span>Buy Now</span>
-                    </Button>
                 </MobileNav>
             </Navbar>
         </Fragment>
