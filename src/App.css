@@ -2,14 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper-pagination {
+nav {
+  background: transparent!important;
+}
+#crew .swiper-pagination {
+  width: fit-content!important;
+  height: fit-content!important;
+  top: 85%!important;
+  left: 0%!important;
+}
+#crew .swiper-pagination-bullet {
+  width: 10px!important;
+  height: 10px!important;
+  margin: 0px 10px!important;
+  background: white!important;
+}
+#destination .swiper-pagination {
   width: fit-content!important;
   height: fit-content!important;
   top: 0!important;
   left: 60%!important;
 }
-.swiper-pagination-bullet {
+#destination .swiper-pagination-bullet {
   width: fit-content!important;
   background: transparent!important;
+}
 
+#tech .swiper {
+  height: 100%;
+}
+
+#tech .swiper-slide {
+  display: flex;
 }

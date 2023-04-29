@@ -26,7 +26,7 @@ import { dataContext } from '../App';
     };
     return (
         <div className='bg-[url("./assets/destination/background-destination-desktop.jpg")] bg-no-repeat bg-cover h-screen'>
-            <div className="container mx-auto relative top-[50%]">
+            <div className="container mx-auto relative top-[40%]" id='destination'>
             <Swiper
             pagination={pagination}
             modules={[Pagination]}
@@ -36,11 +36,31 @@ import { dataContext } from '../App';
         {
             destinationsData.map(destination => {
                 return (
-            <SwiperSlide key={destination.name} className='text-white grid grid-cols-2'>
-            <div>
-            <img src={destination.images.webp} alt={'image of'+ destination.name }></img>
-            </div>
-            <div>
+            <SwiperSlide key={destination.name} className='text-white flex'>
+            <div className='flex items-center'>
+            <section className='w-1/2'>
+                <img src={destination.images.webp} alt={'image of'+ destination.name }></img>
+            </section>
+            <section className='w-1/2'>
+                    <div className='des-info'>
+                    <h1 className='text-8xl'>{destination.name}</h1>
+                    <p>
+                    {destination.description}
+                    </p>
+                    </div>
+                    <hr></hr>
+                    <div>
+                    <div>
+                    <span>AVG. DISTANCE</span>
+                    <span>{destination.distance}</span>
+                    </div>
+                    <div>
+                    <span>Est. travel time</span>
+                    <span>{destination.travel}</span>
+                    </div>
+
+                    </div>
+            </section>
             </div>
             </SwiperSlide>
                 )
