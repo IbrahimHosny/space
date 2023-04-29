@@ -21,7 +21,7 @@ const Technology = () => {
         clickable: true,
         renderBullet: function (index , className ) {
             console.log(className);
-            return `<span class="text-white swiper-pagination-bullet"></span>`
+            return `<span class="text-white swiper-pagination-bullet items-center justify-center">${index+1}</span>`
         },
         
     };
@@ -39,15 +39,15 @@ const Technology = () => {
             techData.map( technology => {
                 return (
                     <SwiperSlide className='justify-end'>
-                    <section className='w-[40%]'>
+                    <section className='w-[45%]'>
                     <span>THE TERMINOLOGY…</span>
                     <h2>{technology.name}</h2>
                     <p>
                     {technology.description}
                     </p>
                     </section>
-                    <div className='w-[40%]'>
-                    <img src={technology.images.portrait} alt='tech'></img>
+                    <div className='w-[45%]'>
+                    <img src={technology.images.portrait} alt='tech' id='techImg'></img>
                     </div>
                     </SwiperSlide>
                 )
