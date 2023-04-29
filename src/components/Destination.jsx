@@ -26,7 +26,7 @@ import { dataContext } from '../App';
     };
     return (
         <div className='bg-[url("./assets/destination/background-destination-desktop.jpg")] bg-no-repeat bg-cover h-screen'>
-            <div className="container mx-auto relative top-[40%]" id='destination'>
+            <div className="container mx-auto relative top-[15%] lg:top-[40%]" id='destination'>
             <Swiper
             pagination={pagination}
             modules={[Pagination]}
@@ -37,24 +37,24 @@ import { dataContext } from '../App';
             destinationsData.map(destination => {
                 return (
             <SwiperSlide key={destination.name} className='text-white flex'>
-            <div className='flex items-center justify-center'>
-            <section className='w-[40%]'>
-                <img src={destination.images.webp} alt={'image of'+ destination.name }></img>
+            <div className='flex flex-wrap items-center justify-center gap-10 lg:gap-0'>
+            <section className='lg:w-[40%] w-full lg:block flex justify-center'>
+                <img src={destination.images.webp} alt={'image of'+ destination.name } className='w-[230px] md:w-[300px] lg:w-[380px] xl:w-[445px]'></img>
             </section>
-            <section className='w-1/3'>
-                    <div className='des-info'>
-                    <h1 className='heading-2'>{destination.name}</h1>
+            <section className='lg:w-1/3 w-[95%]'>
+                    <div className='des-info flex flex-col items-center lg:block'>
+                    <h1 className='heading-3 lg:!text-[100px]'>{destination.name}</h1>
                     <p className='second-color body-text mb-6'>
                     {destination.description}
                     </p>
                     </div>
                     <hr></hr>
-                    <div className='flex gap-20 my-4'>
-                    <div className='flex flex-col items-center w-fit'>
+                    <div className='flex flex-wrap justify-center lg:justify-start gap-8 sm:gap-20 my-4'>
+                    <div className='flex flex-col items-center sm:w-fit w-full'>
                     <span className='subheading-2 second-color'>AVG. DISTANCE</span>
                     <span className='subheading-1'>{destination.distance}</span>
                     </div>
-                    <div className='flex flex-col items-center w-fit'>
+                    <div className='flex flex-col items-center sm:w-fit w-full'>
                     <span className='subheading-2 second-color'>Est. travel time</span>
                     <span className='subheading-1'>{destination.travel}</span>
                     </div>

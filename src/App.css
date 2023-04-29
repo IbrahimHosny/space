@@ -18,28 +18,28 @@
 
 /* typography */
 .heading-1 {
-  font-size: 150px!important;
+  font-size: 150px;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
 }
 .heading-2 {
-  font-size: 100px!important;
+  font-size: 100px;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
 
 }
 .heading-3 {
-  font-size: 58px!important;
+  font-size: 58px;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
 }
 .heading-4 {
-  font-size: 32px!important;
+  font-size: 32px;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
 }
 .heading-5 {
-  font-size: 28px!important;
+  font-size: 28px;
   font-family: 'Barlow Condensed', sans-serif;
   letter-spacing: 4.75px;
 }
@@ -92,6 +92,7 @@ nav {
   top: 0!important;
   left: 53%!important;
 }
+
 #destination .swiper-pagination-bullet {
   width: fit-content!important;
   background: transparent!important;
@@ -102,6 +103,28 @@ nav {
 #destination .swiper-pagination-bullet-active {
   color: #FFFFFF;
   opacity: 100%!important;
+}
+
+@media (max-width: 1024px) {
+  #destination .swiper-pagination {
+    top: 48%!important;
+    left: 5%!important;
+    right: 5%!important;
+    width: 90%!important;
+  }
+  #destination .swiper-pagination-bullet {
+    margin: 0px 10px;
+  }
+}
+@media (max-width: 768px) {
+  #destination .swiper-pagination {
+    top: 43%!important;
+  }
+}
+@media (max-width: 640px) {
+  #destination .swiper-pagination {
+    top: 25vh!important;
+  }
 }
 
 #tech .swiper {
@@ -124,6 +147,7 @@ nav {
   width: 70px;
   margin: 25px 0px;
   display: flex!important;
+
 }
 
 #tech .swiper-pagination-bullet-active {
