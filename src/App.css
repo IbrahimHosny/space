@@ -114,6 +114,7 @@ nav {
 
 #tech .swiper-pagination {
   left: 0;
+  width: fit-content;
 }
 
 #tech .swiper-pagination-bullet {
@@ -128,10 +129,4 @@ nav {
 #tech .swiper-pagination-bullet-active {
   background-color: white!important;
   color: black;
-}
-
-#techImg {
-  height: 100%!important;
-  width: 90%!important;
-  right: 0;
 }
