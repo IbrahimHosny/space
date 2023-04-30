@@ -83,9 +83,24 @@ nav {
   margin: 0px 17px!important;
   background: white!important;
 }
-#crew img {
-  height: 680px!important;
+@media (max-width: 1023px) {
+    #crew .swiper-pagination {
+      top: 24%!important;
+      left: 38%!important;
+  }
 }
+
+@media (max-width: 767px) {
+  #crew .swiper-pagination {
+    width: 60%!important;
+    top: 44vh!important;
+    left: 20%!important;
+}
+}
+
+/* #crew img {
+  height: 680px!important;
+} */
 #destination .swiper-pagination {
   width: fit-content!important;
   height: fit-content!important;
