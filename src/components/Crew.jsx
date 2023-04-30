@@ -41,7 +41,7 @@ const Crew = () => {
                     <p className='second-color body-text'>{crew.bio}</p>
                     </div>
             </section>
-            <section className='w-full lg:w-[40%] flex justify-center lg:justify-end h-full'>
+            <section className='w-full lg:w-[40%] flex justify-center lg:justify-end h-full' id='imgSec'>
                 <img src={crew.images.webp} alt={'image of'+ crew.name } className='lg:h-[680px] md:h-[600px] h-[400px]'></img>
             </section>
 

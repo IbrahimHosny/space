@@ -96,11 +96,13 @@ nav {
     top: 44vh!important;
     left: 20%!important;
 }
+#crew #imgSec {
+  border-bottom: 1px solid rgb(255,255,255,0.2);
 }
 
-/* #crew img {
-  height: 680px!important;
-} */
+}
+
+
 #destination .swiper-pagination {
   width: fit-content!important;
   height: fit-content!important;
@@ -169,3 +171,33 @@ nav {
   background-color: white!important;
   color: black;
 }
+
+@media (max-width:1023px) {
+  #tech .swiper-pagination {
+    display: flex;
+    justify-content: space-evenly;
+    left: 30%;
+    height: fit-content;
+    width: 40%;
+    top: 50vh;
+  }
+}
+
+@media (max-width:768px) {
+  #tech .swiper-pagination {
+    top: 43vh;
+  }
+
+  #tech .swiper-pagination-bullet {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width:640px) {
+  #tech .swiper-pagination {
+    top: 35vh;
+    width: 90%;
+    left: 5%;
+  }
+} 
