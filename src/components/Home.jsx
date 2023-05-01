@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 const Home = () => {
     return (
         <div className='bg-[url("./assets/home/background-home-desktop.jpg")] bg-no-repeat bg-cover h-screen'>
-            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 h-[85%] top-[10%] lg:top-[50%] relative'>
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 h-[85%] top-[10%] lg:top-[50%] lg:h-auto  relative'>
             <section className='max-xl:text-center'>
             <span className='heading-5 second-color max-lg:!text-base'>SO, YOU WANT TO TRAVEL TO</span>
             <h1 className='heading-1  third-color max-sm:!text-8xl max-sm:!leading-loose'>SPACE</h1>

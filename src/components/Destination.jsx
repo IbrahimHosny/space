@@ -19,13 +19,13 @@ import { dataContext } from '../App';
     const pagination = {
         clickable: true,
         renderBullet: function (index , className ) {
-            console.log(className);
             return `<span class="text-white w-fit second-color nav-text h-4 mx-3 swiper-pagination-bullet">${names[index]}</span>`
         },
         
     };
     return (
         <div className='bg-[url("./assets/destination/background-destination-desktop.jpg")] bg-no-repeat bg-cover h-screen'>
+            <h3 className='heading-5 third-color m-auto relative w-[100%] top-[10vh] lg:w-[80%] max-lg:!text-center lg:top-[20vh] md:max-lg:!text-2xl max-md:!text-base'><span className='opacity-50 mx-4'>01</span>Pick your destination</h3>
             <div className="container mx-auto relative top-[15%] lg:top-[40%]" id='destination'>
             <Swiper
             pagination={pagination}

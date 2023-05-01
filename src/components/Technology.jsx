@@ -35,6 +35,7 @@ const [width , setWidth] = useState(window.innerWidth);
 
     return (
         <div className='bg-[url("./assets/technology/background-technology-desktop.jpg")] bg-no-repeat bg-cover h-screen'>
+        <h3 className='heading-5 third-color m-auto relative w-[100%] top-[10vh] lg:w-[80%] max-md:!text-center lg:top-[20vh] md:max-lg:!text-2xl max-md:!text-lg'><span className='opacity-50 mx-4'>03</span>SPACE LAUNCH 101</h3>
         <div className='w-full h-[80%] lg:w-[80%] lg:h-[60%] absolute right-0 bottom-[10%]' id='tech'>
         <Swiper
         direction={"vertical"}

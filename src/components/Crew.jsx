@@ -22,6 +22,7 @@ const Crew = () => {
     };
     return (
         <div className='bg-[url("./assets/crew/background-crew-desktop.jpg")] bg-no-repeat bg-cover h-screen overflow-hidden'>
+        <h3 className='heading-5 third-color m-auto relative w-[100%] top-[10vh] lg:w-[80%] max-md:!text-center lg:top-[20vh] md:max-lg:!text-2xl max-md:!text-lg'><span className='opacity-50 mx-4'>02</span>Meet your crew</h3>
             <div className="container mx-auto relative h-[80%] lg:h-[70%] top-[20%] lg:top-[30%]" id='crew'>
             <Swiper
             pagination={pagination}
