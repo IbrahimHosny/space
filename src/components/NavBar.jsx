@@ -26,8 +26,8 @@ const NavBar = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to="/" className="flex items-center">
-                    00 HOME
+                <Link to="/" className="flex items-center nav-text">
+                    <span className='font-bold me-1'>00</span> HOME
                 </Link>
             </Typography>
             <Typography
@@ -36,8 +36,8 @@ const NavBar = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to="/destination" className="flex items-center">
-                    01 DESTINATION
+                <Link to="/destination" className="flex items-center nav-text">
+                <span className='font-bold me-1'>01</span> DESTINATION
                 </Link>
             </Typography>
             <Typography
@@ -46,8 +46,8 @@ const NavBar = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to="/crew" className="flex items-center">
-                02 CREW
+                <Link to="/crew" className="flex items-center nav-text">
+                <span className='font-bold me-1'>02</span> CREW
                 </Link>
             </Typography>
             <Typography
@@ -56,8 +56,8 @@ const NavBar = () => {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to="/technology" className="flex items-center">
-                03 TECHNOLOGY
+                <Link to="/technology" className="flex items-center nav-text">
+                <span className='font-bold me-1'>03</span> TECHNOLOGY
                 </Link>
             </Typography>
         </ul>
@@ -71,14 +71,14 @@ const NavBar = () => {
                         href="#"
                         className="mr-4 cursor-pointer py-1.5 font-medium"
                     >
-                        Material Tailwind
+                        <img src='./assets/shared/logo.svg' alt='icon' className='max-md:w-[50%] md:max-lg:w-[60%]'></img>
                     </Typography>
                     <div className="flex relative items-center gap-4">
                         <div className='absolute h-full w-full backdrop-blur-lg z-[-10]'></div>
                         <div className="mr-4 hidden lg:block">{navList}</div>
                         <IconButton
                             variant="text"
-                            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+                            className="ml-auto !top-[-13px] !right-[12px] h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
                             ripple={false}
                             onClick={() => setOpenNav(!openNav)}
                         >
@@ -115,7 +115,7 @@ const NavBar = () => {
                         </IconButton>
                     </div>
                 </div>
-                <MobileNav open={openNav}>
+                <MobileNav className='backdrop-blur-xl !h-[94vh] md:max-l:w-[50vw] md:max-l:left-[50%] lg: max-md:w-[80vw] max-md:left-[17%]  relative' open={openNav}>
                     {navList}
                 </MobileNav>
             </Navbar>
