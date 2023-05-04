@@ -64,7 +64,7 @@ const NavBar = () => {
     );
     return (
         <Fragment>
-            <Navbar className="absolute bg-none inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4">
+            <Navbar className="absolute bg-none inset-0 h-max rounded-none py-2 px-4 lg:px-8 lg:py-4">
                 <div className="flex items-center justify-between text-blue-gray-900">
                     <Typography
                         as="a"
