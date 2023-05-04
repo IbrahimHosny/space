@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.69e35cfc.css",
-    "main.js": "/static/js/main.644fde38.js",
-    "static/js/787.f5ec5a07.chunk.js": "/static/js/787.f5ec5a07.chunk.js",
-    "static/media/background-home-desktop.jpg": "/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
-    "static/media/background-destination-desktop.jpg": "/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
-    "static/media/background-crew-desktop.jpg": "/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
-    "static/media/background-technology-desktop.jpg": "/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
-    "index.html": "/index.html",
-    "main.69e35cfc.css.map": "/static/css/main.69e35cfc.css.map",
-    "main.644fde38.js.map": "/static/js/main.644fde38.js.map",
-    "787.f5ec5a07.chunk.js.map": "/static/js/787.f5ec5a07.chunk.js.map"
+    "main.css": "/space/static/css/main.2b4f25b7.css",
+    "main.js": "/space/static/js/main.7cf033d1.js",
+    "static/js/787.f5ec5a07.chunk.js": "/space/static/js/787.f5ec5a07.chunk.js",
+    "static/media/background-home-desktop.jpg": "/space/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/background-destination-desktop.jpg": "/space/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
+    "static/media/background-crew-desktop.jpg": "/space/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
+    "static/media/background-technology-desktop.jpg": "/space/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
+    "index.html": "/space/index.html",
+    "main.2b4f25b7.css.map": "/space/static/css/main.2b4f25b7.css.map",
+    "main.7cf033d1.js.map": "/space/static/js/main.7cf033d1.js.map",
+    "787.f5ec5a07.chunk.js.map": "/space/static/js/787.f5ec5a07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69e35cfc.css",
-    "static/js/main.644fde38.js"
+    "static/css/main.2b4f25b7.css",
+    "static/js/main.7cf033d1.js"
   ]
 }
