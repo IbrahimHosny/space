@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 import './App.css';
 import './index.css'
 import Navbar from './components/Navbar.js';
-import { Route, Routes } from 'react-router';
+import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Destination from './components/Destination';
 import Crew from './components/Crew';
@@ -17,10 +17,10 @@ function App() {
     <Navbar />
     <dataContext.Provider value={data}>
     <Routes>
-    <Route path='/' element={<Home />} />
-    <Route path='/destination' element={<Destination />} />
-    <Route path='/crew' element={<Crew />} />
-    <Route path='/technology' element={<Technology />} />
+    <Route path='space-tourism' element={<Home />} />
+    <Route path='space-tourism/destination' element={<Destination />} />
+    <Route path='space-tourism/crew' element={<Crew />} />
+    <Route path='space-tourism/technology' element={<Technology />} />
     </Routes>
     </dataContext.Provider>
     </Fragment>
