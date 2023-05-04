@@ -17,10 +17,10 @@ function App() {
     <Navbar />
     <dataContext.Provider value={data}>
     <Routes>
-    <Route path='/' element={<Home />} />
-    <Route path='/destination' element={<Destination />} />
-    <Route path='/crew' element={<Crew />} />
-    <Route path='/technology' element={<Technology />} />
+    <Route path='/space/' element={<Home />} />
+    <Route path='/space/destination' element={<Destination />} />
+    <Route path='/space/crew' element={<Crew />} />
+    <Route path='/space/technology' element={<Technology />} />
     </Routes>
     </dataContext.Provider>
     </Fragment>
