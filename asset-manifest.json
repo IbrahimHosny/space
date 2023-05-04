@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/space-tourism/static/css/main.1a74fdbb.css",
-    "main.js": "/space-tourism/static/js/main.709fdbef.js",
-    "static/js/787.f5ec5a07.chunk.js": "/space-tourism/static/js/787.f5ec5a07.chunk.js",
-    "static/media/background-home-desktop.jpg": "/space-tourism/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
-    "static/media/background-destination-desktop.jpg": "/space-tourism/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
-    "static/media/background-crew-desktop.jpg": "/space-tourism/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
-    "static/media/background-technology-desktop.jpg": "/space-tourism/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
-    "index.html": "/space-tourism/index.html",
-    "main.1a74fdbb.css.map": "/space-tourism/static/css/main.1a74fdbb.css.map",
-    "main.709fdbef.js.map": "/space-tourism/static/js/main.709fdbef.js.map",
-    "787.f5ec5a07.chunk.js.map": "/space-tourism/static/js/787.f5ec5a07.chunk.js.map"
+    "main.css": "/static/css/main.69e35cfc.css",
+    "main.js": "/static/js/main.644fde38.js",
+    "static/js/787.f5ec5a07.chunk.js": "/static/js/787.f5ec5a07.chunk.js",
+    "static/media/background-home-desktop.jpg": "/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/background-destination-desktop.jpg": "/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
+    "static/media/background-crew-desktop.jpg": "/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
+    "static/media/background-technology-desktop.jpg": "/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
+    "index.html": "/index.html",
+    "main.69e35cfc.css.map": "/static/css/main.69e35cfc.css.map",
+    "main.644fde38.js.map": "/static/js/main.644fde38.js.map",
+    "787.f5ec5a07.chunk.js.map": "/static/js/787.f5ec5a07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a74fdbb.css",
-    "static/js/main.709fdbef.js"
+    "static/css/main.69e35cfc.css",
+    "static/js/main.644fde38.js"
   ]
 }
