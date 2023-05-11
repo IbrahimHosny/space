@@ -28,7 +28,7 @@ const [width , setWidth] = useState(window.innerWidth);
     const pagination = {
         clickable: true,
         renderBullet: function (index , className ) {
-            return `<span class="heading-4 opacity-100 text-white swiper-pagination-bullet items-center justify-center">${index+1}</span>`
+            return `<span class="heading-4 opacity-100 text-white swiper-pagination-bullet items-center justify-center max-sm:!text-xl">${index+1}</span>`
         },
         horizontalClass: true,
     };
@@ -36,7 +36,7 @@ const [width , setWidth] = useState(window.innerWidth);
     return (
         <div className='bg-[url("./assets/technology/background-technology-desktop.jpg")] bg-no-repeat bg-cover h-screen'>
         <h3 className='heading-5 third-color m-auto relative w-[100%] top-[10vh] lg:w-[80%] max-md:!text-center lg:top-[20vh] md:max-lg:!text-2xl max-md:!text-lg'><span className='opacity-50 mx-4'>03</span>SPACE LAUNCH 101</h3>
-        <div className='w-full h-[80%] lg:w-[80%] lg:h-[60%] absolute right-0 bottom-[10%]' id='tech'>
+        <div className='w-full h-[80%] lg:w-[80%] lg:h-[60%] absolute right-0 bottom-[10%] max-sm:bottom-[5%]' id='tech'>
         <Swiper
         direction={"vertical"}
         pagination={pagination}
@@ -46,11 +46,11 @@ const [width , setWidth] = useState(window.innerWidth);
         {
             techData.map( technology => {
                 return (
-                    <SwiperSlide key={technology.name} className='flex flex-wrap-reverse items-center justify-evenly lg:justify-end'>
+                    <SwiperSlide key={technology.name} className='flex flex-wrap-reverse items-center justify-evenly lg:justify-end max-sm:flex-col-reverse max-sm:justify-around'>
                     <section className='lg:w-[45%] w-[90%] max-xl:text-center max-lg:mx-auto'>
                     <span className='second-color subheading-2'>THE TERMINOLOGY…</span>
                     <h2 className='heading-3 third-color max-md:!text-3xl md:max-lg:!text-5xl'>{technology.name}</h2>
-                    <p className='body-text second-color'>
+                    <p className='body-text second-color max-sm:!leading-[25px]'>
                     {technology.description}
                     </p>
                     </section>

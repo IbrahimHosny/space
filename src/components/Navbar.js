@@ -18,8 +18,8 @@ const Navbar = () => {
         <div className="absolute w-full h-full top-0 bg-white opacity-10 z-[-1]"></div>
         <li onClick={clickHandler} className="flex items-center max-sm:mt-[100px] max-sm:mb-[30px] max-sm:ms-[15px] sm:h-full"><Link to="space-tourism"><span>00</span> HOME</Link></li>
         <li onClick={clickHandler} className="flex items-center max-sm:my-[30px] max-sm:ms-[15px] sm:h-full"><Link to="space-tourism/destination"><span>00</span> DESTINATION</Link></li>
-        <li onClick={clickHandler} className="flex items-center max-sm:my-[30px] max-sm:ms-[15px] sm:h-full"><Link to="/crew"><span>00</span> CREW</Link> </li>
-        <li onClick={clickHandler} className="flex items-center max-sm:my-[30px] max-sm:ms-[15px] sm:h-full"><Link to="/technology"><span>00</span> TECHNOLOGY</Link></li>
+        <li onClick={clickHandler} className="flex items-center max-sm:my-[30px] max-sm:ms-[15px] sm:h-full"><Link to="space-tourism/crew"><span>00</span> CREW</Link> </li>
+        <li onClick={clickHandler} className="flex items-center max-sm:my-[30px] max-sm:ms-[15px] sm:h-full"><Link to="space-tourism/technology"><span>00</span> TECHNOLOGY</Link></li>
         </ul>
         </nav>
         </Fragment>

@@ -33,17 +33,17 @@ const Crew = () => {
         {
             crewData.map(crew => {
                 return (
-            <SwiperSlide key={crew.name} className='text-white flex'>
-            <div className='flex gap-16 lg:gap-0 md:max-lg:flex-wrap flex-wrap-reverse lg:items-center lg:justify-around'>
+            <SwiperSlide key={crew.name} className='text-white max-sm:h-[50vh]'>
+            <div className='flex gap-16 max-sm:gap-8 lg:gap-0 md:max-lg:flex-wrap flex-wrap-reverse lg:items-center lg:justify-around max-sm:h-full'>
             <section className='w-full text-center lg:text-start lg:w-[35%]'>
-                    <div className='des-info max-lg:w-[80%] m-auto'>
+                    <div className='des-info max-lg:w-[80%] max-sm:w-[90%]  m-auto'>
                     <span className='heading-4 opacity-50 max-lg:!text-3xl max-md:!text-xl'>{crew.role}</span>
-                    <h1 className='heading-3 xl:whitespace-nowrap max-lg:!text-5xl max-md:!text-3xl'>{crew.name}</h1>
-                    <p className='second-color body-text'>{crew.bio}</p>
+                    <h1 className='heading-3 xl:whitespace-nowrap max-lg:!text-5xl max-md:!text-3xl max-sm:!text-2xl'>{crew.name}</h1>
+                    <p className='second-color body-text max-sm:!leading-6 max-sm:!text-lg'>{crew.bio}</p>
                     </div>
             </section>
             <section className='w-full lg:w-[40%] flex justify-center lg:justify-end h-full' id='imgSec'>
-                <img src={crew.images.webp} alt={'image of'+ crew.name } className='lg:h-[680px] md:h-[600px] h-[400px]'></img>
+                <img src={crew.images.webp} alt={'image of'+ crew.name } className='lg:h-[680px] md:h-[600px] h-[220px]'></img>
             </section>
 
             </div>
